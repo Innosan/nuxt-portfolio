@@ -1,4 +1,4 @@
-import type { NavigationLink } from "~/types/general";
+import type { NavigationLink } from "~/types/NavigationLink";
 
 export const navigation: NavigationLink[] = [
 	{
@@ -15,9 +15,9 @@ export const navigation: NavigationLink[] = [
 	},
 	{
 		id: 3,
-		to: "/help",
-		label: "Help",
-		icon: "i-heroicons-user-group-solid",
+		to: "/projects",
+		label: "Projects",
+		icon: "i-heroicons-code-bracket-square",
 	},
 ];
 

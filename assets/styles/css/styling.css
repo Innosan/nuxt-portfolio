@@ -1,0 +1,39 @@
+.gradient-bg {
+	background: rgb(0,0,0);
+	width: 90vw;
+	margin: 0 auto;
+	background: linear-gradient(180deg, rgb(45, 45, 45) 10%, rgba(50, 50, 50, 0.6) 45%, rgba(60,60,60,0.5) 75%);
+	backdrop-filter: blur(5px);
+}
+
+html {
+	content: "";
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: radial-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 0);
+	background-size: 34px 34px;
+	background-position: 26px 26px;
+}
+
+.aboba::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 0);
+	background-size: 24px 24px;
+}
+
+.stroke_me {
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 1px;
+	-webkit-font-smoothing: antialiased;
+
+	font-family: Overpass, sans-serif;
+}
