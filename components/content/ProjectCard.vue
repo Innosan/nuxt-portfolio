@@ -4,13 +4,13 @@
 	<div>
 		<UCard>
 			<template #header>
-				<slot name="title"></slot>
+				<p class="font-bold">
+					<slot name="title" />
+				</p>
 			</template>
 			<div>
-				<slot name="description"></slot>
+				<slot name="description" />
 			</div>
 		</UCard>
 	</div>
 </template>
-
-<style scoped></style>
