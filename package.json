@@ -10,6 +10,8 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@iconify-json/mdi": "^1.2.0",
+    "@nuxt/image": "^1.8.0",
     "nuxt": "^3.10.3",
     "nuxt-aos": "^1.2.5",
     "sass": "^1.69.7",

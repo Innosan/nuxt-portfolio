@@ -1,25 +1,30 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-				devtools: { enabled: true },
+	devtools: { enabled: true },
 
-				modules: [
-				 "@nuxt/ui",
-				 "@formkit/auto-animate/nuxt",
-				 "@pinia/nuxt",
-				 "@nuxt/content",
-				 "nuxt-aos",
-				],
+	modules: [
+		"@nuxt/ui",
+		"@formkit/auto-animate/nuxt",
+		"@pinia/nuxt",
+		"@nuxt/content",
+		"nuxt-aos",
+		"@nuxt/image",
+	],
 
-				content: {
-								// ... options
-				},
+	content: {
+		// ... options
+	},
 
-				components: [
-								{
-												path: "~/components",
-												pathPrefix: false,
-								},
-				],
+	components: [
+		{
+			path: "~/components",
+			pathPrefix: false,
+		},
+	],
 
-				css: ["~/assets/styles/main.css"],
+	image: {
+		dir: "public/images",
+	},
+
+	css: ["~/assets/styles/main.css"],
 });
