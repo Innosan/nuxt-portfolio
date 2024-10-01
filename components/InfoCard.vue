@@ -16,7 +16,9 @@ const props = defineProps({
 </script>
 
 <template>
-	<UCard class="select-none">
+	<UCard
+		class="select-none bg-gradient-to-r via-transparent from-primary-100 to-gray-100 dark:from-gray-900 dark:to-zinc-900 bg-[length:400%_400%] animate-gradientBackground"
+	>
 		<template #header>
 			<UIcon
 				class="w-24 h-24 opacity-80 absolute -mt-12 md:-mt-14 -ml-8 md:-ml-14"

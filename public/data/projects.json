@@ -1,0 +1,55 @@
+[
+	{
+		"id": 1,
+		"title": "Yin Yang",
+		"description": "An online delivery service that offers a wide range of products and services. The website is designed to be accessible and user-friendly, with a focus on simplicity and functionality.",
+		"images": [
+			"/images/projects/yin-yang/desktop-home.png",
+			"/images/projects/yin-yang/mobile-home.png",
+			"/images/projects/yin-yang/sign-in-mobile.png"
+		],
+		"tags": [
+			{
+				"icon": "i-heroicons-squares-plus",
+				"name": "Design system"
+			},
+			{
+				"icon": "i-heroicons-device-phone-mobile",
+				"name": "Mobile app"
+			},
+			{
+				"icon": "i-heroicons-computer-desktop-solid",
+				"name": "Responsive web app"
+			},
+			{
+				"icon": "i-heroicons-server-stack",
+				"name": "Robust BaaS integration"
+			},
+			{
+				"icon": "i-heroicons-presentation-chart-bar",
+				"name": "Custom admin-panel"
+			},
+			{
+				"icon": "i-heroicons-receipt-percent",
+				"name": "Payment integration"
+			}
+		],
+		"links": [
+			{
+				"icon": "i-heroicons-link",
+				"name": "Visit website",
+				"url": ""
+			},
+			{
+				"icon": "i-tabler-brand-github",
+				"name": "Source code",
+				"url": ""
+			},
+			{
+				"icon": "i-tabler-brand-figma",
+				"name": "Design",
+				"url": ""
+			}
+		]
+	}
+]

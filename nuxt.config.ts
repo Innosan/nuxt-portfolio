@@ -2,18 +2,17 @@
 export default defineNuxtConfig({
 	devtools: { enabled: true },
 
+	colorMode: {
+		preference: "dark",
+	},
+
 	modules: [
 		"@nuxt/ui",
 		"@formkit/auto-animate/nuxt",
 		"@pinia/nuxt",
-		"@nuxt/content",
 		"nuxt-aos",
 		"@nuxt/image",
 	],
-
-	content: {
-		// ... options
-	},
 
 	components: [
 		{

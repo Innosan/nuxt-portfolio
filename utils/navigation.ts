@@ -9,15 +9,9 @@ export const navigation: NavigationLink[] = [
 	},
 	{
 		id: 2,
-		to: "/about",
-		label: "About",
-		icon: "i-heroicons-information-circle",
-	},
-	{
-		id: 3,
 		to: "/projects",
-		label: "Projects",
-		icon: "i-heroicons-code-bracket-square",
+		label: "All projects",
+		icon: "i-heroicons-code-bracket-square-solid",
 	},
 ];
 
