@@ -128,10 +128,22 @@ const projects = projectsData as Project[];
 		>
 			Project highlights
 		</h2>
-		<MainProjectCard
-			v-for="project in projects"
-			:key="project.id"
-			:project="project"
-		/>
+		<div class="flex flex-col gap-16">
+			<MainProjectCard
+				v-for="(project, index) in projects"
+				:key="project.id"
+				:orientation="index % 2 === 0 ? 'left' : 'right'"
+				:project="project"
+			/>
+		</div>
 	</div>
+	<UButton
+		data-aos="fade-up"
+		block
+		label="More projects"
+		to="/projects"
+		size="xl"
+		icon="i-heroicons-arrow-right-20-solid"
+		class="rounded-full font-black text-xl mb-12"
+	/>
 </template>

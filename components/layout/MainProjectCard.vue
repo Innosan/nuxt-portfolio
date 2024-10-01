@@ -1,18 +1,35 @@
 <script setup lang="ts">
 import { cardSizes } from "~/utils/ui/cardSizes";
 import type { Project } from "~/types/Project";
+import HoverCard from "~/components/utility/HoverCard.vue";
 
 const props = defineProps({
 	project: {
 		type: Object as PropType<Project>,
 		required: true,
 	},
+	orientation: {
+		type: String as PropType<"left" | "right">,
+		default: "left",
+	},
 });
+
+const openFullSize = (image: string) => {
+	currentImage.value = image;
+	isOpen.value = true;
+};
+
+const isOpen = ref(false);
+const currentImage = ref("");
 </script>
 
 <template>
-	<div class="grid md:grid-cols-4 gap-12">
-		<div class="flex col-span-2 flex-col" data-aos="fade-up">
+	<div class="md:grid flex flex-col md:grid-cols-4 gap-12">
+		<div
+			class="flex col-span-2 flex-col order-last"
+			:class="orientation === 'right' ? 'md:order-first' : ''"
+			data-aos="fade-up"
+		>
 			<UCard :ui="cardSizes.sm">
 				<template #header>
 					<p class="font-bold text-2xl">{{ project.title }}</p>
@@ -42,25 +59,56 @@ const props = defineProps({
 			</UCard>
 		</div>
 		<div
-			class="grid col-span-2 grid-rows-2 grid-cols-3 justify-items-end justify-between gap-12"
+			class="flex flex-col md:grid md:col-span-2 md:grid-rows-2 md:grid-cols-3 md:justify-items-end md:justify-between gap-12"
 		>
-			<NuxtImg
-				data-aos="fade-up"
-				data-aos-delay="400"
-				class="w-96 h-[460px] ring-2 ring-primary-500 rounded-3xl object-cover object-top row-span-2 col-span-2"
-				:src="project.images[0]"
-			/>
-			<NuxtImg
-				data-aos="fade-up"
-				class="ring-2 ring-primary-500 rounded-3xl w-40 h-52 object-cover object-center"
-				:src="project.images[1]"
-			/>
-			<NuxtImg
-				data-aos="fade-up"
-				data-aos-delay="200"
-				class="ring-2 ring-primary-500 rounded-3xl w-40 h-48 object-top object-cover"
-				:src="project.images[2]"
-			/>
+			<div
+				@click="openFullSize(project.images[0])"
+				class="relative group md:row-span-2 md:col-span-2 cursor-pointer"
+			>
+				<NuxtImg
+					data-aos="fade-up"
+					data-aos-delay="400"
+					class="md:w-96 w-full md:h-[460px] rounded-3xl object-cover object-top"
+					:src="project.images[0]"
+				/>
+				<HoverCard />
+			</div>
+			<div
+				@click="openFullSize(project.images[1])"
+				class="relative group cursor-pointer"
+			>
+				<NuxtImg
+					data-aos="fade-up"
+					data-aos-delay="400"
+					class="w-full rounded-3xl md:w-40 md:h-52 object-cover object-center"
+					:src="project.images[1]"
+				/>
+				<HoverCard />
+			</div>
+			<div
+				@click="openFullSize(project.images[2])"
+				class="relative group cursor-pointer"
+			>
+				<NuxtImg
+					data-aos="fade-up"
+					data-aos-delay="400"
+					class="w-full rounded-3xl md:w-40 md:h-48 object-top object-cover"
+					:src="project.images[2]"
+				/>
+				<HoverCard />
+			</div>
 		</div>
 	</div>
+
+	<UModal v-model="isOpen">
+		<UCard :ui="cardSizes.sm">
+			<template #header>
+				<p class="font-bold text-lg">Full image</p>
+			</template>
+			<NuxtImg
+				class="w-full object-top object-cover"
+				:src="currentImage"
+			/>
+		</UCard>
+	</UModal>
 </template>

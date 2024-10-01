@@ -51,5 +51,99 @@
 				"url": ""
 			}
 		]
+	},
+	{
+		"id": 2,
+		"title": "Petr Pan",
+		"description": "Marketplace of food, snacks and other products from Russia for people living in South Korea. Built with focus on people that miss their home country and want to buy products from there.",
+		"images": [
+			"/images/projects/petr-pan/desktop-home.png",
+			"/images/projects/petr-pan/categories.png",
+			"/images/projects/petr-pan/cart.png"
+		],
+		"tags": [
+			{
+				"name": "Multi-language support",
+				"icon": "i-heroicons-language"
+			},
+			{
+				"name": "Modern design with quirky elements",
+				"icon": "i-heroicons-squares-plus"
+			},
+			{
+				"name": "Custom admin-panel",
+				"icon": "i-heroicons-presentation-chart-bar"
+			},
+			{
+				"name": "Focus on user-flow",
+				"icon": "i-heroicons-device-phone-mobile"
+			}
+		],
+		"links": [
+			{
+				"icon": "i-heroicons-link",
+				"name": "Visit website",
+				"url": ""
+			},
+			{
+				"icon": "i-tabler-brand-github",
+				"name": "Source code",
+				"url": ""
+			},
+			{
+				"icon": "i-tabler-brand-figma",
+				"name": "Design",
+				"url": ""
+			}
+		]
+	},
+	{
+		"id": 2,
+		"title": "Money Saver",
+		"description": "A budgeting app that helps users track their expenses and save money. With the help of AI, the app provides personalized recommendations and insights to help users make better financial decisions.",
+		"images": [
+			"/images/projects/money-saver/home.png",
+			"/images/projects/money-saver/hints.png",
+			"/images/projects/money-saver/profile.png"
+		],
+		"tags": [
+			{
+				"icon": "i-heroicons-device-phone-mobile",
+				"name": "Mobile app"
+			},
+			{
+				"name": "Personalized recommendations",
+				"icon": "i-heroicons-identification"
+			},
+			{
+				"name": "AI-powered insights",
+				"icon": "i-heroicons-sparkles"
+			},
+			{
+				"name": "Secure data storage",
+				"icon": "i-heroicons-lock-closed"
+			},
+			{
+				"icon": "i-heroicons-squares-plus",
+				"name": "Design system"
+			}
+		],
+		"links": [
+			{
+				"icon": "i-heroicons-link",
+				"name": "Visit website",
+				"url": ""
+			},
+			{
+				"icon": "i-tabler-brand-github",
+				"name": "Source code",
+				"url": ""
+			},
+			{
+				"icon": "i-tabler-brand-figma",
+				"name": "Design",
+				"url": ""
+			}
+		]
 	}
 ]
