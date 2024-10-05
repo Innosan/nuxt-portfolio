@@ -8,6 +8,21 @@ const projects = projectsData as Project[];
 </script>
 
 <template>
+	<Head>
+		<title>Innosan</title>
+		<meta
+			name="description"
+			content="I'm a developer who loves to create beautiful things"
+		/>
+		<meta name="keywords" content="portfolio, projects, developer, vue" />
+		<meta property="og:title" content="Innosan" />
+		<meta
+			property="og:description"
+			content="I'm a developer who loves to create beautiful things"
+		/>
+		<meta property="og:url" content="https://innosan.netlify.app" />
+		<meta name="twitter:card" content="summary_large_image" />
+	</Head>
 	<div
 		class="flex text-black dark:text-white justify-end xl:justify-between items-center py-12"
 	>
