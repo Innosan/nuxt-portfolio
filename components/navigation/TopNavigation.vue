@@ -1,17 +1,26 @@
 <script setup lang="ts">
-import type { PropType } from "vue";
 import type { NavigationLink } from "~/types/NavigationLink";
 
-const props = defineProps({
-	links: {
-		type: Array as PropType<Array<NavigationLink>>,
-		required: true,
-	},
+const { t } = useI18n();
+
+const navigation = computed(() => {
+	return [
+		{
+			id: 1,
+			to: "/",
+			label: t("navigation.home"),
+			icon: "i-heroicons-home-solid",
+		},
+		{
+			id: 2,
+			to: "/projects",
+			label: t("navigation.allProjects"),
+			icon: "i-heroicons-code-bracket-square-solid",
+		},
+	] as NavigationLink[];
 });
 </script>
 
 <template>
-	<UHorizontalNavigation :links="links" />
+	<UHorizontalNavigation :links="navigation" />
 </template>
-
-<style scoped></style>

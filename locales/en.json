@@ -1,0 +1,38 @@
+{
+	"navigation": {
+		"home": "Home",
+		"allProjects": "All projects"
+	},
+	"index": {
+		"textBanner": {
+			"upperText": "design",
+			"lowerWords": "development, prototype, architecture"
+		},
+		"title": "Hi!",
+		"name": "I'm Mikhail,",
+		"jobTitle": "lovely full-stack developer",
+		"city": "from St. Petersburg, Russia",
+		"info": {
+			"first": {
+				"title": "9+",
+				"description": "projects made"
+			},
+			"second": {
+				"title": "3 years",
+				"description": "of experience"
+			},
+			"third": {
+				"title": "23",
+				"description": "designs created"
+			}
+		},
+		"about": {
+			"first": "I'm a versatile developer and designer with experience in building high-quality web and mobile applications using diverse technologies.",
+			"second": "My core expertise lies in Nuxt.js and Vue.js, but I'm proficient in various frameworks and libraries like tReact, HTMX, and Svelte."
+		},
+		"contacts": "Contacts",
+		"projects": {
+			"title": "Project highlights"
+		}
+	}
+}

@@ -14,16 +14,16 @@ const projects = projectsData as Project[];
 		<TextBanner />
 		<div class="w-fit font-bold text-5xl gap-4 flex flex-col text-right">
 			<h1 class="text-8xl">
-				<span class="text-primary">Hi!</span>
+				<span class="text-primary">{{ $t("index.title") }}</span>
 			</h1>
-			<p class="text-6xl">I'm Mikhail,</p>
+			<p class="text-6xl">{{ $t("index.name") }}</p>
 			<p class="md:text-nowrap text-2xl md:text-5xl">
-				lovely <span class="text-primary">full-stack</span> developer
+				{{ $t("index.jobTitle") }}
 			</p>
 			<p
 				class="text-xl md:text-2xl text-gray-800 dark:text-gray-200 underline"
 			>
-				from St. Petersburg, Russia
+				{{ $t("index.city") }}
 			</p>
 		</div>
 	</div>
@@ -36,8 +36,8 @@ const projects = projectsData as Project[];
 			<InfoCard
 				data-aos="fade-up"
 				icon="i-heroicons-code-bracket-solid"
-				title="9+"
-				info="projects made"
+				:title="$t('index.info.first.title')"
+				:info="$t('index.info.first.description')"
 			/>
 		</div>
 		<div
@@ -47,8 +47,8 @@ const projects = projectsData as Project[];
 				data-aos="fade-up"
 				data-aos-delay="100"
 				icon="i-heroicons-paint-brush-solid"
-				title="23"
-				info="designs created"
+				:title="$t('index.info.second.title')"
+				:info="$t('index.info.second.description')"
 			/>
 		</div>
 		<div
@@ -58,8 +58,8 @@ const projects = projectsData as Project[];
 				data-aos="fade-up"
 				data-aos-delay="250"
 				icon="i-heroicons-sparkles-solid"
-				title="3 years"
-				info="of experience"
+				:title="$t('index.info.third.title')"
+				:info="$t('index.info.third.description')"
 			/>
 		</div>
 	</div>
@@ -78,22 +78,19 @@ const projects = projectsData as Project[];
 				/>
 				<div class="flex flex-col gap-4 p-4">
 					<p class="opacity-60">
-						I'm a versatile developer and designer with experience
-						building high-quality web and mobile applications using
-						diverse technologies.
+						{{ $t("index.about.first") }}
 					</p>
 					<p class="text-lg">
-						My core expertise lies in
-						<b class="text-xl">Nuxt.js and Vue.js</b>, but I'm
-						proficient in various frameworks and libraries like
-						React, HTMX, and Svelte.
+						{{ $t("index.about.second") }}
 					</p>
 				</div>
 			</div>
 		</UCard>
 		<UCard data-aos="fade-up" data-aos-delay="250" :ui="cardSizes.sm">
 			<template #header>
-				<h3 class="uppercase text-3xl font-black">Contacts</h3>
+				<h3 class="uppercase text-3xl font-black">
+					{{ $t("index.contacts") }}
+				</h3>
 			</template>
 			<div class="grid grid-cols-2 grid-rows-2 gap-4">
 				<UButton
@@ -126,7 +123,7 @@ const projects = projectsData as Project[];
 			data-aos="fade-up"
 			class="text-4xl underline decoration-4 decoration-primary-500 underline-offset-4 font-black"
 		>
-			Project highlights
+			{{ $t("index.projects.title") }}
 		</h2>
 		<div class="flex flex-col gap-16">
 			<MainProjectCard

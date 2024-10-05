@@ -1,0 +1,38 @@
+{
+	"navigation": {
+		"home": "홈",
+		"allProjects": "모든 프로젝트"
+	},
+	"index": {
+		"textBanner": {
+			"upperText": "디자인",
+			"lowerWords": "개발, 프로토타입, 아키텍처"
+		},
+		"title": "안녕하세요!",
+		"name": "저는 미하일입니다",
+		"jobTitle": "사랑스러운 풀스택 개발자",
+		"city": "러시아 세인트페테르부르크 출신",
+		"info": {
+			"first": {
+				"title": "9+",
+				"description": "개의 프로젝트 제작"
+			},
+			"second": {
+				"title": "3년",
+				"description": "의 경험"
+			},
+			"third": {
+				"title": "23",
+				"description": "개의 디자인 제작"
+			}
+		},
+		"about": {
+			"first": "다양한 기술을 사용하여 고품질 웹 및 모바일 애플리케이션을 구축하는 경험을 가진 다재다능한 개발자 및 디자이너입니다.",
+			"second": "Nuxt.js 및 Vue.js에 대한 핵심 전문성을 가지고 있지만 React, HTMX 및 Svelte와 같은 다양한 프레임워크 및 라이브러리에 능숙합니다."
+		},
+		"contacts": "연락처",
+		"projects": {
+			"title": "프로젝트 하이라이트"
+		}
+	}
+}

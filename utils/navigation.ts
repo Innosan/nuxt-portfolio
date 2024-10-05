@@ -1,20 +1,5 @@
 import type { NavigationLink } from "~/types/NavigationLink";
 
-export const navigation: NavigationLink[] = [
-	{
-		id: 1,
-		to: "/",
-		label: "Home",
-		icon: "i-heroicons-home-solid",
-	},
-	{
-		id: 2,
-		to: "/projects",
-		label: "All projects",
-		icon: "i-heroicons-code-bracket-square-solid",
-	},
-];
-
 export const socials: NavigationLink[] = [
 	{
 		id: 1,

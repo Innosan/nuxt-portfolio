@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const words = ["development", "prototype", "architecture"];
+const words = computed(() => {
+	return useI18n().t("index.textBanner.lowerWords").split(", ");
+});
 
 const currentWord = ref(0);
 const currentLetter = ref(0);
@@ -8,7 +10,7 @@ const isTyping = ref(true);
 onMounted(() => {
 	const interval = setInterval(() => {
 		if (isTyping.value) {
-			if (currentLetter.value < words[currentWord.value].length) {
+			if (currentLetter.value < words.value[currentWord.value].length) {
 				currentLetter.value++;
 			} else {
 				isTyping.value = false;
@@ -17,7 +19,8 @@ onMounted(() => {
 			if (currentLetter.value > 0) {
 				currentLetter.value--;
 			} else {
-				currentWord.value = (currentWord.value + 1) % words.length;
+				currentWord.value =
+					(currentWord.value + 1) % words.value.length;
 				isTyping.value = true;
 			}
 		}
@@ -29,7 +32,7 @@ onMounted(() => {
 <template>
 	<div class="text-6xl w-max font-black select-none hidden xl:block">
 		<div class="flex flex-col">
-			<p>DESIGN</p>
+			<p class="uppercase">{{ $t("index.textBanner.upperText") }}</p>
 			<UDivider
 				size="lg"
 				label="&"

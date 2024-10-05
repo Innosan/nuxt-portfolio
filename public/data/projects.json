@@ -4,9 +4,9 @@
 		"title": "Yin Yang",
 		"description": "An online delivery service that offers a wide range of products and services. The website is designed to be accessible and user-friendly, with a focus on simplicity and functionality.",
 		"images": [
-			"/images/projects/yin-yang/desktop-home.png",
-			"/images/projects/yin-yang/mobile-home.png",
-			"/images/projects/yin-yang/sign-in-mobile.png"
+			"/public/images/projects/yin-yang/desktop-home.png",
+			"/public/images/projects/yin-yang/mobile-home.png",
+			"/public/images/projects/yin-yang/mobile-sign-in.png"
 		],
 		"tags": [
 			{
@@ -57,9 +57,9 @@
 		"title": "Petr Pan",
 		"description": "Marketplace of food, snacks and other products from Russia for people living in South Korea. Built with focus on people that miss their home country and want to buy products from there.",
 		"images": [
-			"/images/projects/petr-pan/desktop-home.png",
-			"/images/projects/petr-pan/categories.png",
-			"/images/projects/petr-pan/cart.png"
+			"/public/images/projects/petr-pan/desktop-home.png",
+			"/public/images/projects/petr-pan/categories.png",
+			"/public/images/projects/petr-pan/cart.png"
 		],
 		"tags": [
 			{
@@ -102,9 +102,9 @@
 		"title": "Money Saver",
 		"description": "A budgeting app that helps users track their expenses and save money. With the help of AI, the app provides personalized recommendations and insights to help users make better financial decisions.",
 		"images": [
-			"/images/projects/money-saver/home.png",
-			"/images/projects/money-saver/hints.png",
-			"/images/projects/money-saver/profile.png"
+			"/public/images/projects/money-saver/home.png",
+			"/public/images/projects/money-saver/hints.png",
+			"/public/images/projects/money-saver/profile.png"
 		],
 		"tags": [
 			{
